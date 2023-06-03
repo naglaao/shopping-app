@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createProduct.css">
+
+    <title>shoping cart |Create Product</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="brand">sHopping</a>
+                <nav>
+                    <ul id="links">
+                      <li><a href="login.html">Sign In </a></li>
+                      <li><a href="register.html">Sign Up</a></li>
+                    </ul>
+                    <ul id="user_info">
+                      <li><a href="favorites.html"> <i class="far fa-heart" style="color:red ; font-weight: 900;"></i>
+                      </a></li>
+                      <li><a href="#" id="user"></a></li>
+                      <li><a href="#" id="logout">LogOut</a></li>
+                      <li><a href="myProducts.html">My Products</a></li>
+                      <li class="shoppingCart"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <span id="cart-count"></span>
+                        <div class="carts-products">
+                          <div></div>
+                          <a href="cartproduct.html">view all products</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="create-product-page">
+        <div class="container">
+
+            <form  id="create-form" action="">
+                <input type="file" name="" id="uploade-img">
+                <input type="text" id='product-name' placeholder="Name....." />
+                <input type="text" id='product-desc' placeholder="Description....." />
+                <select name="" value="" id="product-size">
+                    <option value="" hidden >Select Size </option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+                <input id="product-create-btn" type="submit" value="Create">
+            </form>
+        </div>
+    </section>
+    <script src="js/user.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/cartMenu.js"></script>
+    <script src="js/createProduct.js"></script>
+</body>
+
+</html>
